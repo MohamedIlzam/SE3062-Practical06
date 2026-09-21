@@ -341,6 +341,7 @@ def run_ga(
     history_avg: List[float] = []
     history_feasible_best: List[float] = []
 
+    feasible_found = False
     global_best_feasible = {
         "value": 0,
         "weight": 0,
@@ -353,10 +354,11 @@ def run_ga(
     capacity = instance["capacity"]
 
     def update_feasible(individuals):
-        nonlocal global_best_feasible
+        nonlocal global_best_feasible, feasible_found
         for ind in individuals:
             tot_w = sum(w * g for w, g in zip(weights, ind))
             if tot_w <= capacity:
+                feasible_found = True
                 tot_v = sum(v * g for v, g in zip(values, ind))
                 if tot_v > global_best_feasible["value"]:
                     global_best_feasible = {
@@ -424,16 +426,19 @@ def run_ga(
     # In case the best individual in pop is feasible, ensure global_best matches
     best_wt = sum(w * g for w, g in zip(weights, best_ind))
     best_val = sum(v * g for v, g in zip(values, best_ind))
-    if best_wt <= capacity and best_val > global_best_feasible["value"]:
-        global_best_feasible = {
-            "value": best_val,
-            "weight": best_wt,
-            "fitness": final_best_fitness,
-            "solution": list(best_ind),
-        }
+    if best_wt <= capacity:
+        feasible_found = True
+        if best_val > global_best_feasible["value"]:
+            global_best_feasible = {
+                "value": best_val,
+                "weight": best_wt,
+                "fitness": final_best_fitness,
+                "solution": list(best_ind),
+            }
 
     return {
         "seed": seed,
+        "feasible_found": feasible_found,
         "final_best_fitness": final_best_fitness,
         "final_avg_fitness": final_avg_fitness,
         "best_feasible_value": global_best_feasible["value"],
@@ -613,6 +618,7 @@ def run_experiments(instance: Dict[str, Any]) -> Tuple[pd.DataFrame, pd.DataFram
                 "configuration": cfg_name,
                 "description": config["description"],
                 "seed": seed,
+                "feasible_found": run_res["feasible_found"],
                 "selection": config["selection"],
                 "tournament_k": config.get("tournament_k", "") if config["selection"] == "tournament" else "",
                 "crossover": config["crossover"],
@@ -680,6 +686,7 @@ def run_experiments(instance: Dict[str, Any]) -> Tuple[pd.DataFrame, pd.DataFram
         best_fits = subset["final_best_fitness"].values
         feas_vals = subset["best_feasible_value"].values
         gaps = subset["optimality_gap_percent"].values
+        feasible_runs_count = int(subset["feasible_found"].sum())
 
         # Convergence metric calculation
         gens = [
@@ -698,6 +705,7 @@ def run_experiments(instance: Dict[str, Any]) -> Tuple[pd.DataFrame, pd.DataFram
         summary_rows.append({
             "configuration": cfg_name,
             "description": config["description"],
+            "feasible_runs": f"{feasible_runs_count}/5",
             "mean_best_fitness": round(float(np.mean(best_fits)), 2),
             "sd_best_fitness": round(float(np.std(best_fits, ddof=1)), 2),
             "median_best_fitness": round(float(np.median(best_fits)), 2),
@@ -978,25 +986,25 @@ def main():
     generate_plots(history_records, df_summary)
 
     # 4. Print Summary Table
-    print("\n" + "=" * 100)
+    print("\n" + "=" * 116)
     print("SUMMARY RESULTS TABLE (Aggregated Across 5 Seeds: 42, 43, 44, 45, 46)")
-    print("=" * 100)
+    print("=" * 116)
     print(
-        f"{'Configuration':<18} | {'Best Fitness (Mean±SD)':<24} | {'Median Fit':<10} | "
+        f"{'Configuration':<18} | {'Feasible Runs':<13} | {'Best Fitness (Mean±SD)':<24} | {'Median Fit':<10} | "
         f"{'Feasible Value':<14} | {'Gap (%)':<8} | {'Gen to Base Median':<18}"
     )
-    print("-" * 100)
+    print("-" * 116)
 
     for _, row in df_summary.iterrows():
         fit_str = f"{row['mean_best_fitness']:.1f} ± {row['sd_best_fitness']:.1f}"
         val_str = f"{row['mean_feasible_value']:.1f}"
         gap_str = f"{row['mean_optimality_gap_pct']:.2f}%"
         print(
-            f"{row['configuration']:<18} | {fit_str:<24} | {row['median_best_fitness']:<10.1f} | "
+            f"{row['configuration']:<18} | {row['feasible_runs']:<13} | {fit_str:<24} | {row['median_best_fitness']:<10.1f} | "
             f"{val_str:<14} | {gap_str:<8} | {row['mean_gen_to_baseline_median']:<18}"
         )
 
-    print("=" * 100)
+    print("=" * 116)
     print("\nExecution completed successfully.")
     print(f"Detailed run results : {os.path.join(RESULTS_DIR, 'experiment_results.csv')}")
     print(f"Summary table        : {os.path.join(RESULTS_DIR, 'summary_results.csv')}")
