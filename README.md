@@ -1,7 +1,7 @@
 # SE3062 Practical 06 – Genetic Algorithms for 0/1 Knapsack
 
 ## Project Purpose
-This project implements a Genetic Algorithm (GA) framework using Python and DEAP (`Distributed Evolutionary Algorithms in Python`) to solve the classic NP-hard **0/1 Knapsack Problem**. The implementation conducts a rigorous, empirical study analyzing how different genetic operators (selection pressure, crossover mechanics, mutation rates, and elitism) affect convergence speed, constraint satisfaction, and solution optimality under a quadratic-order hard-penalty function.
+This project implements a Genetic Algorithm (GA) framework using Python and DEAP (`Distributed Evolutionary Algorithms in Python`) to solve the classic NP-hard **0/1 Knapsack Problem**. The implementation conducts a rigorous, empirical study analyzing how different genetic operators (selection pressure, crossover mechanics, mutation rates, and elitism) affect convergence speed, constraint satisfaction, and solution optimality under a hard-penalty fitness function (linear hard penalty with respect to capacity overflow).
 
 All algorithms, experiments, benchmark parsers, and plotting routines are self-contained within [`ga_knapsack.py`](file:///c:/CS/Y3S1/IS/labs/lab6/SE3062-Practical06/ga_knapsack.py).
 

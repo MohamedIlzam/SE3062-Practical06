@@ -1,11 +1,11 @@
-configuration,description,mean_best_fitness,sd_best_fitness,median_best_fitness,mean_feasible_value,sd_feasible_value,mean_optimality_gap_pct,mean_gen_to_baseline_median
-baseline,"Baseline (Tournament k=3, 2-point, pm=0.02)",8666.0,468.9,8817.0,8666.0,468.9,5.26,181.7 (3/5 reached)
-tournament_k2,"Tournament k=2, 2-point, pm=0.02",7466.6,1105.89,7328.0,7466.6,1105.89,18.37,None reached (>200)
-tournament_k4,"Tournament k=4, 2-point, pm=0.02",8716.4,264.03,8897.0,8716.4,264.03,4.71,83.7 (3/5 reached)
-roulette,"Roulette (Shifted), 2-point, pm=0.02",5620.4,992.37,5457.0,5620.4,992.37,38.55,None reached (>200)
-rank,"Linear Rank, 2-point, pm=0.02",7418.6,937.48,7525.0,7418.6,937.48,18.9,None reached (>200)
-crossover_1point,"One-point Crossover, Tournament k=3, pm=0.02",8273.2,612.29,8333.0,8273.2,612.29,9.55,168.0 (1/5 reached)
-crossover_uniform,"Uniform Crossover, Tournament k=3, pm=0.02",8563.6,245.21,8575.0,8563.6,245.21,6.38,116.0 (1/5 reached)
-mutation_pm0.01,"Mutation pm=0.01, Tournament k=3, 2-point",9054.0,127.76,9147.0,9054.0,127.76,1.02,69.6
-mutation_pm0.05,"Mutation pm=0.05, Tournament k=3, 2-point",-11295955.8,2260220.24,-12397426.0,0.0,0.0,100.0,None reached (>200)
-mutation_pm0.10,"Mutation pm=0.10, Tournament k=3, 2-point",-44416331.6,9815883.66,-49500927.0,0.0,0.0,100.0,None reached (>200)
+configuration,description,feasible_runs,mean_best_fitness,sd_best_fitness,median_best_fitness,mean_feasible_value,sd_feasible_value,mean_optimality_gap_pct,mean_gen_to_baseline_median
+baseline,"Baseline (Tournament k=3, 2-point, pm=0.02)",5/5,8666.0,468.9,8817.0,8666.0,468.9,5.26,181.7 (3/5 reached)
+tournament_k2,"Tournament k=2, 2-point, pm=0.02",5/5,7466.6,1105.89,7328.0,7466.6,1105.89,18.37,None reached (>200)
+tournament_k4,"Tournament k=4, 2-point, pm=0.02",5/5,8716.4,264.03,8897.0,8716.4,264.03,4.71,83.7 (3/5 reached)
+roulette,"Roulette (Shifted), 2-point, pm=0.02",5/5,5620.4,992.37,5457.0,5620.4,992.37,38.55,None reached (>200)
+rank,"Linear Rank, 2-point, pm=0.02",5/5,7418.6,937.48,7525.0,7418.6,937.48,18.9,None reached (>200)
+crossover_1point,"One-point Crossover, Tournament k=3, pm=0.02",5/5,8273.2,612.29,8333.0,8273.2,612.29,9.55,168.0 (1/5 reached)
+crossover_uniform,"Uniform Crossover, Tournament k=3, pm=0.02",5/5,8563.6,245.21,8575.0,8563.6,245.21,6.38,116.0 (1/5 reached)
+mutation_pm0.01,"Mutation pm=0.01, Tournament k=3, 2-point",5/5,9054.0,127.76,9147.0,9054.0,127.76,1.02,69.6
+mutation_pm0.05,"Mutation pm=0.05, Tournament k=3, 2-point",0/5,-11295955.8,2260220.24,-12397426.0,0.0,0.0,100.0,None reached (>200)
+mutation_pm0.10,"Mutation pm=0.10, Tournament k=3, 2-point",0/5,-44416331.6,9815883.66,-49500927.0,0.0,0.0,100.0,None reached (>200)

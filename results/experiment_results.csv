@@ -1,51 +1,51 @@
-configuration,description,seed,selection,tournament_k,crossover,pc,pm,population,generations,elitism,final_best_fitness,final_avg_fitness,best_feasible_value,best_feasible_weight,capacity,known_optimum,optimality_gap_percent,generation_to_baseline_median
-baseline,"Baseline (Tournament k=3, 2-point, pm=0.02)",42,tournament,3,two-point,0.9,0.02,150,200,2,7896.0,-17998188.386666667,7896,994,995,9147,13.6766,>200
-baseline,"Baseline (Tournament k=3, 2-point, pm=0.02)",43,tournament,3,two-point,0.9,0.02,150,200,2,8628.0,-18622881.706666667,8628,932,995,9147,5.674,>200
-baseline,"Baseline (Tournament k=3, 2-point, pm=0.02)",44,tournament,3,two-point,0.9,0.02,150,200,2,8842.0,-17339449.506666668,8842,954,995,9147,3.3344,199
-baseline,"Baseline (Tournament k=3, 2-point, pm=0.02)",45,tournament,3,two-point,0.9,0.02,150,200,2,8817.0,-17810532.086666666,8817,908,995,9147,3.6077,160
-baseline,"Baseline (Tournament k=3, 2-point, pm=0.02)",46,tournament,3,two-point,0.9,0.02,150,200,2,9147.0,-19983545.366666667,9147,985,995,9147,0.0,186
-tournament_k2,"Tournament k=2, 2-point, pm=0.02",42,tournament,2,two-point,0.9,0.02,150,200,2,7328.0,-32086211.426666666,7328,965,995,9147,19.8863,>200
-tournament_k2,"Tournament k=2, 2-point, pm=0.02",43,tournament,2,two-point,0.9,0.02,150,200,2,7171.0,-31447147.92,7171,974,995,9147,21.6027,>200
-tournament_k2,"Tournament k=2, 2-point, pm=0.02",44,tournament,2,two-point,0.9,0.02,150,200,2,8145.0,-34969303.12,8145,966,995,9147,10.9544,>200
-tournament_k2,"Tournament k=2, 2-point, pm=0.02",45,tournament,2,two-point,0.9,0.02,150,200,2,8810.0,-33567758.406666666,8810,969,995,9147,3.6843,>200
-tournament_k2,"Tournament k=2, 2-point, pm=0.02",46,tournament,2,two-point,0.9,0.02,150,200,2,5879.0,-35503032.68666667,5879,995,995,9147,35.7276,>200
-tournament_k4,"Tournament k=4, 2-point, pm=0.02",42,tournament,4,two-point,0.9,0.02,150,200,2,8897.0,-15348654.633333333,8897,987,995,9147,2.7331,84
-tournament_k4,"Tournament k=4, 2-point, pm=0.02",43,tournament,4,two-point,0.9,0.02,150,200,2,8929.0,-13857435.306666667,8929,972,995,9147,2.3833,103
-tournament_k4,"Tournament k=4, 2-point, pm=0.02",44,tournament,4,two-point,0.9,0.02,150,200,2,8897.0,-15619310.9,8897,987,995,9147,2.7331,64
-tournament_k4,"Tournament k=4, 2-point, pm=0.02",45,tournament,4,two-point,0.9,0.02,150,200,2,8473.0,-15933483.86,8473,988,995,9147,7.3685,>200
-tournament_k4,"Tournament k=4, 2-point, pm=0.02",46,tournament,4,two-point,0.9,0.02,150,200,2,8386.0,-15027884.853333334,8386,991,995,9147,8.3197,>200
-roulette,"Roulette (Shifted), 2-point, pm=0.02",42,roulette,,two-point,0.9,0.02,150,200,2,5149.0,-56767020.34,5149,921,995,9147,43.7083,>200
-roulette,"Roulette (Shifted), 2-point, pm=0.02",43,roulette,,two-point,0.9,0.02,150,200,2,5457.0,-46821094.85333333,5457,824,995,9147,40.3411,>200
-roulette,"Roulette (Shifted), 2-point, pm=0.02",44,roulette,,two-point,0.9,0.02,150,200,2,7272.0,-59973960.913333334,7272,986,995,9147,20.4985,>200
-roulette,"Roulette (Shifted), 2-point, pm=0.02",45,roulette,,two-point,0.9,0.02,150,200,2,4640.0,-48404533.14,4640,959,995,9147,49.273,>200
-roulette,"Roulette (Shifted), 2-point, pm=0.02",46,roulette,,two-point,0.9,0.02,150,200,2,5584.0,-51174841.92666667,5584,911,995,9147,38.9527,>200
-rank,"Linear Rank, 2-point, pm=0.02",42,rank,,two-point,0.9,0.02,150,200,2,8406.0,-36207130.446666665,8406,981,995,9147,8.101,>200
-rank,"Linear Rank, 2-point, pm=0.02",43,rank,,two-point,0.9,0.02,150,200,2,6948.0,-36647857.43333333,6948,982,995,9147,24.0407,>200
-rank,"Linear Rank, 2-point, pm=0.02",44,rank,,two-point,0.9,0.02,150,200,2,6079.0,-34275552.18,6079,941,995,9147,33.5411,>200
-rank,"Linear Rank, 2-point, pm=0.02",45,rank,,two-point,0.9,0.02,150,200,2,8135.0,-30485332.266666666,8135,991,995,9147,11.0637,>200
-rank,"Linear Rank, 2-point, pm=0.02",46,rank,,two-point,0.9,0.02,150,200,2,7525.0,-28295307.173333332,7525,969,995,9147,17.7326,>200
-crossover_1point,"One-point Crossover, Tournament k=3, pm=0.02",42,tournament,3,one-point,0.9,0.02,150,200,2,8333.0,-19288469.773333333,8333,928,995,9147,8.8991,>200
-crossover_1point,"One-point Crossover, Tournament k=3, pm=0.02",43,tournament,3,one-point,0.9,0.02,150,200,2,8029.0,-21419794.6,8029,927,995,9147,12.2226,>200
-crossover_1point,"One-point Crossover, Tournament k=3, pm=0.02",44,tournament,3,one-point,0.9,0.02,150,200,2,8395.0,-18801936.886666667,8395,959,995,9147,8.2213,>200
-crossover_1point,"One-point Crossover, Tournament k=3, pm=0.02",45,tournament,3,one-point,0.9,0.02,150,200,2,7462.0,-17358308.733333334,7462,942,995,9147,18.4213,>200
-crossover_1point,"One-point Crossover, Tournament k=3, pm=0.02",46,tournament,3,one-point,0.9,0.02,150,200,2,9147.0,-19850650.14666667,9147,985,995,9147,0.0,168
-crossover_uniform,"Uniform Crossover, Tournament k=3, pm=0.02",42,tournament,3,uniform,0.9,0.02,150,200,2,8897.0,-19022091.78,8897,987,995,9147,2.7331,116
-crossover_uniform,"Uniform Crossover, Tournament k=3, pm=0.02",43,tournament,3,uniform,0.9,0.02,150,200,2,8693.0,-17623657.286666665,8693,965,995,9147,4.9634,>200
-crossover_uniform,"Uniform Crossover, Tournament k=3, pm=0.02",44,tournament,3,uniform,0.9,0.02,150,200,2,8575.0,-20013000.54,8575,967,995,9147,6.2534,>200
-crossover_uniform,"Uniform Crossover, Tournament k=3, pm=0.02",45,tournament,3,uniform,0.9,0.02,150,200,2,8331.0,-17565795.56,8331,878,995,9147,8.921,>200
-crossover_uniform,"Uniform Crossover, Tournament k=3, pm=0.02",46,tournament,3,uniform,0.9,0.02,150,200,2,8322.0,-22380638.406666666,8322,990,995,9147,9.0194,>200
-mutation_pm0.01,"Mutation pm=0.01, Tournament k=3, 2-point",42,tournament,3,two-point,0.9,0.01,150,200,2,9147.0,-5719724.173333333,9147,985,995,9147,0.0,67
-mutation_pm0.01,"Mutation pm=0.01, Tournament k=3, 2-point",43,tournament,3,two-point,0.9,0.01,150,200,2,8929.0,-5597577.88,8929,972,995,9147,2.3833,78
-mutation_pm0.01,"Mutation pm=0.01, Tournament k=3, 2-point",44,tournament,3,two-point,0.9,0.01,150,200,2,9147.0,-7069343.006666667,9147,985,995,9147,0.0,79
-mutation_pm0.01,"Mutation pm=0.01, Tournament k=3, 2-point",45,tournament,3,two-point,0.9,0.01,150,200,2,9147.0,-5835332.64,9147,985,995,9147,0.0,55
-mutation_pm0.01,"Mutation pm=0.01, Tournament k=3, 2-point",46,tournament,3,two-point,0.9,0.01,150,200,2,8900.0,-6350129.886666667,8900,981,995,9147,2.7003,69
-mutation_pm0.05,"Mutation pm=0.05, Tournament k=3, 2-point",42,tournament,3,two-point,0.9,0.05,150,200,2,-9454770.0,-73365488.35333334,0,0,995,9147,100.0,>200
-mutation_pm0.05,"Mutation pm=0.05, Tournament k=3, 2-point",43,tournament,3,two-point,0.9,0.05,150,200,2,-12397426.0,-71533489.25333333,0,0,995,9147,100.0,>200
-mutation_pm0.05,"Mutation pm=0.05, Tournament k=3, 2-point",44,tournament,3,two-point,0.9,0.05,150,200,2,-8369599.0,-72225301.05333333,0,0,995,9147,100.0,>200
-mutation_pm0.05,"Mutation pm=0.05, Tournament k=3, 2-point",45,tournament,3,two-point,0.9,0.05,150,200,2,-13652238.0,-73731786.38666667,0,0,995,9147,100.0,>200
-mutation_pm0.05,"Mutation pm=0.05, Tournament k=3, 2-point",46,tournament,3,two-point,0.9,0.05,150,200,2,-12605746.0,-76308495.18,0,0,995,9147,100.0,>200
-mutation_pm0.10,"Mutation pm=0.10, Tournament k=3, 2-point",42,tournament,3,two-point,0.9,0.1,150,200,2,-52670817.0,-144947973.04666665,0,0,995,9147,100.0,>200
-mutation_pm0.10,"Mutation pm=0.10, Tournament k=3, 2-point",43,tournament,3,two-point,0.9,0.1,150,200,2,-31695663.0,-135638878.96,0,0,995,9147,100.0,>200
-mutation_pm0.10,"Mutation pm=0.10, Tournament k=3, 2-point",44,tournament,3,two-point,0.9,0.1,150,200,2,-52151068.0,-140768522.11333334,0,0,995,9147,100.0,>200
-mutation_pm0.10,"Mutation pm=0.10, Tournament k=3, 2-point",45,tournament,3,two-point,0.9,0.1,150,200,2,-36063183.0,-139349712.80666667,0,0,995,9147,100.0,>200
-mutation_pm0.10,"Mutation pm=0.10, Tournament k=3, 2-point",46,tournament,3,two-point,0.9,0.1,150,200,2,-49500927.0,-147334486.47333333,0,0,995,9147,100.0,>200
+configuration,description,seed,feasible_found,selection,tournament_k,crossover,pc,pm,population,generations,elitism,final_best_fitness,final_avg_fitness,best_feasible_value,best_feasible_weight,capacity,known_optimum,optimality_gap_percent,generation_to_baseline_median
+baseline,"Baseline (Tournament k=3, 2-point, pm=0.02)",42,True,tournament,3,two-point,0.9,0.02,150,200,2,7896.0,-17998188.386666667,7896,994,995,9147,13.6766,>200
+baseline,"Baseline (Tournament k=3, 2-point, pm=0.02)",43,True,tournament,3,two-point,0.9,0.02,150,200,2,8628.0,-18622881.706666667,8628,932,995,9147,5.674,>200
+baseline,"Baseline (Tournament k=3, 2-point, pm=0.02)",44,True,tournament,3,two-point,0.9,0.02,150,200,2,8842.0,-17339449.506666668,8842,954,995,9147,3.3344,199
+baseline,"Baseline (Tournament k=3, 2-point, pm=0.02)",45,True,tournament,3,two-point,0.9,0.02,150,200,2,8817.0,-17810532.086666666,8817,908,995,9147,3.6077,160
+baseline,"Baseline (Tournament k=3, 2-point, pm=0.02)",46,True,tournament,3,two-point,0.9,0.02,150,200,2,9147.0,-19983545.366666667,9147,985,995,9147,0.0,186
+tournament_k2,"Tournament k=2, 2-point, pm=0.02",42,True,tournament,2,two-point,0.9,0.02,150,200,2,7328.0,-32086211.426666666,7328,965,995,9147,19.8863,>200
+tournament_k2,"Tournament k=2, 2-point, pm=0.02",43,True,tournament,2,two-point,0.9,0.02,150,200,2,7171.0,-31447147.92,7171,974,995,9147,21.6027,>200
+tournament_k2,"Tournament k=2, 2-point, pm=0.02",44,True,tournament,2,two-point,0.9,0.02,150,200,2,8145.0,-34969303.12,8145,966,995,9147,10.9544,>200
+tournament_k2,"Tournament k=2, 2-point, pm=0.02",45,True,tournament,2,two-point,0.9,0.02,150,200,2,8810.0,-33567758.406666666,8810,969,995,9147,3.6843,>200
+tournament_k2,"Tournament k=2, 2-point, pm=0.02",46,True,tournament,2,two-point,0.9,0.02,150,200,2,5879.0,-35503032.68666667,5879,995,995,9147,35.7276,>200
+tournament_k4,"Tournament k=4, 2-point, pm=0.02",42,True,tournament,4,two-point,0.9,0.02,150,200,2,8897.0,-15348654.633333333,8897,987,995,9147,2.7331,84
+tournament_k4,"Tournament k=4, 2-point, pm=0.02",43,True,tournament,4,two-point,0.9,0.02,150,200,2,8929.0,-13857435.306666667,8929,972,995,9147,2.3833,103
+tournament_k4,"Tournament k=4, 2-point, pm=0.02",44,True,tournament,4,two-point,0.9,0.02,150,200,2,8897.0,-15619310.9,8897,987,995,9147,2.7331,64
+tournament_k4,"Tournament k=4, 2-point, pm=0.02",45,True,tournament,4,two-point,0.9,0.02,150,200,2,8473.0,-15933483.86,8473,988,995,9147,7.3685,>200
+tournament_k4,"Tournament k=4, 2-point, pm=0.02",46,True,tournament,4,two-point,0.9,0.02,150,200,2,8386.0,-15027884.853333334,8386,991,995,9147,8.3197,>200
+roulette,"Roulette (Shifted), 2-point, pm=0.02",42,True,roulette,,two-point,0.9,0.02,150,200,2,5149.0,-56767020.34,5149,921,995,9147,43.7083,>200
+roulette,"Roulette (Shifted), 2-point, pm=0.02",43,True,roulette,,two-point,0.9,0.02,150,200,2,5457.0,-46821094.85333333,5457,824,995,9147,40.3411,>200
+roulette,"Roulette (Shifted), 2-point, pm=0.02",44,True,roulette,,two-point,0.9,0.02,150,200,2,7272.0,-59973960.913333334,7272,986,995,9147,20.4985,>200
+roulette,"Roulette (Shifted), 2-point, pm=0.02",45,True,roulette,,two-point,0.9,0.02,150,200,2,4640.0,-48404533.14,4640,959,995,9147,49.273,>200
+roulette,"Roulette (Shifted), 2-point, pm=0.02",46,True,roulette,,two-point,0.9,0.02,150,200,2,5584.0,-51174841.92666667,5584,911,995,9147,38.9527,>200
+rank,"Linear Rank, 2-point, pm=0.02",42,True,rank,,two-point,0.9,0.02,150,200,2,8406.0,-36207130.446666665,8406,981,995,9147,8.101,>200
+rank,"Linear Rank, 2-point, pm=0.02",43,True,rank,,two-point,0.9,0.02,150,200,2,6948.0,-36647857.43333333,6948,982,995,9147,24.0407,>200
+rank,"Linear Rank, 2-point, pm=0.02",44,True,rank,,two-point,0.9,0.02,150,200,2,6079.0,-34275552.18,6079,941,995,9147,33.5411,>200
+rank,"Linear Rank, 2-point, pm=0.02",45,True,rank,,two-point,0.9,0.02,150,200,2,8135.0,-30485332.266666666,8135,991,995,9147,11.0637,>200
+rank,"Linear Rank, 2-point, pm=0.02",46,True,rank,,two-point,0.9,0.02,150,200,2,7525.0,-28295307.173333332,7525,969,995,9147,17.7326,>200
+crossover_1point,"One-point Crossover, Tournament k=3, pm=0.02",42,True,tournament,3,one-point,0.9,0.02,150,200,2,8333.0,-19288469.773333333,8333,928,995,9147,8.8991,>200
+crossover_1point,"One-point Crossover, Tournament k=3, pm=0.02",43,True,tournament,3,one-point,0.9,0.02,150,200,2,8029.0,-21419794.6,8029,927,995,9147,12.2226,>200
+crossover_1point,"One-point Crossover, Tournament k=3, pm=0.02",44,True,tournament,3,one-point,0.9,0.02,150,200,2,8395.0,-18801936.886666667,8395,959,995,9147,8.2213,>200
+crossover_1point,"One-point Crossover, Tournament k=3, pm=0.02",45,True,tournament,3,one-point,0.9,0.02,150,200,2,7462.0,-17358308.733333334,7462,942,995,9147,18.4213,>200
+crossover_1point,"One-point Crossover, Tournament k=3, pm=0.02",46,True,tournament,3,one-point,0.9,0.02,150,200,2,9147.0,-19850650.14666667,9147,985,995,9147,0.0,168
+crossover_uniform,"Uniform Crossover, Tournament k=3, pm=0.02",42,True,tournament,3,uniform,0.9,0.02,150,200,2,8897.0,-19022091.78,8897,987,995,9147,2.7331,116
+crossover_uniform,"Uniform Crossover, Tournament k=3, pm=0.02",43,True,tournament,3,uniform,0.9,0.02,150,200,2,8693.0,-17623657.286666665,8693,965,995,9147,4.9634,>200
+crossover_uniform,"Uniform Crossover, Tournament k=3, pm=0.02",44,True,tournament,3,uniform,0.9,0.02,150,200,2,8575.0,-20013000.54,8575,967,995,9147,6.2534,>200
+crossover_uniform,"Uniform Crossover, Tournament k=3, pm=0.02",45,True,tournament,3,uniform,0.9,0.02,150,200,2,8331.0,-17565795.56,8331,878,995,9147,8.921,>200
+crossover_uniform,"Uniform Crossover, Tournament k=3, pm=0.02",46,True,tournament,3,uniform,0.9,0.02,150,200,2,8322.0,-22380638.406666666,8322,990,995,9147,9.0194,>200
+mutation_pm0.01,"Mutation pm=0.01, Tournament k=3, 2-point",42,True,tournament,3,two-point,0.9,0.01,150,200,2,9147.0,-5719724.173333333,9147,985,995,9147,0.0,67
+mutation_pm0.01,"Mutation pm=0.01, Tournament k=3, 2-point",43,True,tournament,3,two-point,0.9,0.01,150,200,2,8929.0,-5597577.88,8929,972,995,9147,2.3833,78
+mutation_pm0.01,"Mutation pm=0.01, Tournament k=3, 2-point",44,True,tournament,3,two-point,0.9,0.01,150,200,2,9147.0,-7069343.006666667,9147,985,995,9147,0.0,79
+mutation_pm0.01,"Mutation pm=0.01, Tournament k=3, 2-point",45,True,tournament,3,two-point,0.9,0.01,150,200,2,9147.0,-5835332.64,9147,985,995,9147,0.0,55
+mutation_pm0.01,"Mutation pm=0.01, Tournament k=3, 2-point",46,True,tournament,3,two-point,0.9,0.01,150,200,2,8900.0,-6350129.886666667,8900,981,995,9147,2.7003,69
+mutation_pm0.05,"Mutation pm=0.05, Tournament k=3, 2-point",42,False,tournament,3,two-point,0.9,0.05,150,200,2,-9454770.0,-73365488.35333334,0,0,995,9147,100.0,>200
+mutation_pm0.05,"Mutation pm=0.05, Tournament k=3, 2-point",43,False,tournament,3,two-point,0.9,0.05,150,200,2,-12397426.0,-71533489.25333333,0,0,995,9147,100.0,>200
+mutation_pm0.05,"Mutation pm=0.05, Tournament k=3, 2-point",44,False,tournament,3,two-point,0.9,0.05,150,200,2,-8369599.0,-72225301.05333333,0,0,995,9147,100.0,>200
+mutation_pm0.05,"Mutation pm=0.05, Tournament k=3, 2-point",45,False,tournament,3,two-point,0.9,0.05,150,200,2,-13652238.0,-73731786.38666667,0,0,995,9147,100.0,>200
+mutation_pm0.05,"Mutation pm=0.05, Tournament k=3, 2-point",46,False,tournament,3,two-point,0.9,0.05,150,200,2,-12605746.0,-76308495.18,0,0,995,9147,100.0,>200
+mutation_pm0.10,"Mutation pm=0.10, Tournament k=3, 2-point",42,False,tournament,3,two-point,0.9,0.1,150,200,2,-52670817.0,-144947973.04666665,0,0,995,9147,100.0,>200
+mutation_pm0.10,"Mutation pm=0.10, Tournament k=3, 2-point",43,False,tournament,3,two-point,0.9,0.1,150,200,2,-31695663.0,-135638878.96,0,0,995,9147,100.0,>200
+mutation_pm0.10,"Mutation pm=0.10, Tournament k=3, 2-point",44,False,tournament,3,two-point,0.9,0.1,150,200,2,-52151068.0,-140768522.11333334,0,0,995,9147,100.0,>200
+mutation_pm0.10,"Mutation pm=0.10, Tournament k=3, 2-point",45,False,tournament,3,two-point,0.9,0.1,150,200,2,-36063183.0,-139349712.80666667,0,0,995,9147,100.0,>200
+mutation_pm0.10,"Mutation pm=0.10, Tournament k=3, 2-point",46,False,tournament,3,two-point,0.9,0.1,150,200,2,-49500927.0,-147334486.47333333,0,0,995,9147,100.0,>200
