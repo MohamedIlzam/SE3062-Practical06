@@ -1,0 +1,22 @@
+# Python virtual environment
+.venv/
+venv/
+ENV/
+env/
+
+# Large benchmark archive (148MB exceeds GitHub's 100MB limit; data/pisinger/knapPI_1_100_1000.csv is committed directly)
+*.tgz
+*.tar.gz
+smallcoeff_pisinger.tgz
+
+# Python cache & bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.pytest_cache/
+
+# OS and IDE files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
